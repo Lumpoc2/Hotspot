@@ -1,5 +1,5 @@
 <?php 
-$host = "192.168.1.123";
+$host = "192.168.10.1";
 $user = "admin";
-$pass = "admin";
+$pass = "mark_123";
 ?>

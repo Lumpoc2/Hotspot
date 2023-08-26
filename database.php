@@ -5,7 +5,7 @@ $stmt->execute(array());
 $stmt = $DB_con->prepare("SET time_zone = '+05:30'");
 $stmt->execute(array());
 
-$stmt = $DB_con->prepare("CREATE TABLE IF NOT EXISTS `hotspot_users` (
+$stmt = $DB_con->prepare("CREATE TABLE `hotspot_users` (
   `user_id` int(11) NOT NULL,
   `email` varchar(200) NOT NULL,
   `date_added` date NOT NULL,

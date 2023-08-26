@@ -1,8 +1,8 @@
 <?php
-	$DB_host = "localhost";
-	$DB_user = "root";
-	$DB_pass = "root123";
-	$DB_name = "mikrotik";
+	$DB_host = "127.0.0.1";
+	$DB_user = "u991923994_fal_db";
+	$DB_pass = "Hotspot_db123";
+	$DB_name = "u991923994_Hotspot_db";
 
 	try
 		{
@@ -10,7 +10,7 @@
 			$DB_con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			
 			$dbname = "`".str_replace("`","``",$DB_name)."`";
-			$DB_con->query("CREATE DATABASE IF NOT EXISTS $dbname");
+			$DB_con->query("CREATE DATABASE $dbname");
 			$DB_con->query("use $dbname");
 		}
 		catch(PDOException $e) {
